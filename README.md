@@ -79,7 +79,7 @@ npm start
 
 **Bhumika H M**
 
-- 📧 [Bhumikahm2003@gmail.com](mailto:bhumikahm2003@gmail.com)  
+- 📧 [bhumikahm2003@gmail.com](mailto:bhumikahm2003@gmail.com)
 - 🔗 [LinkedIn](http://www.linkedin.com/in/bhumika-h-m)  
 - 💻 [GitHub](https://github.com/Bhumikahm)  
 - 🌐 [Portfolio](https://bhumika-protfolio.vercel.app/)
