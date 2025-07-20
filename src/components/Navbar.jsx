@@ -57,6 +57,13 @@ export const Navbar = () => {
         >
           <a href="#contact"> Contact</a>
         </motion.li>
+         <motion.li
+          variants={fadeInUp}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          <a href="https://drive.google.com/file/d/1GuwjBoJLn0p68V6GQAWp9ITppOQolIkC/view?usp=sharing" download> Resume</a>
+        </motion.li>
       </motion.ul>
     </motion.nav>
   );
