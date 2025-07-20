@@ -7,6 +7,14 @@ import { useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
 
+const staggerContainer = {
+  animate: {
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
+};
+
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
 
@@ -30,7 +38,15 @@ function App() {
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        <p> &copy; 2025 PedroTech. All rights reserved.</p>
+        <motion.div className="social-links" variants={staggerContainer}>
+            <motion.a href="https://github.com/Bhumikahm" target="_blank">
+              <i className="fab fa-github"> </i>
+            </motion.a>
+            <motion.a href="http://www.linkedin.com/in/bhumika-h-m" target="_blank">
+              <i className="fab fa-linkedin"> </i>
+            </motion.a>
+          </motion.div>
+        <p> &copy; 2025 Bhumika hm. All rights reserved.</p>
       </motion.footer>
     </div>
   );

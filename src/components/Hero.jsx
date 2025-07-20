@@ -70,14 +70,6 @@ export const Hero = () => {
               Contact Me
             </motion.a>
           </motion.div>
-          <motion.div className="social-links" variants={staggerContainer}>
-            <motion.a href="https://github.com/Bhumikahm" target="_blank">
-              <i className="fab fa-github"> </i>
-            </motion.a>
-            <motion.a href="http://www.linkedin.com/in/bhumika-h-m" target="_blank">
-              <i className="fab fa-linkedin"> </i>
-            </motion.a>
-          </motion.div>
         </motion.div>
 
         <motion.div

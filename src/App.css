@@ -558,4 +558,12 @@ body {
   background: var(--background);
   color: var(--text-color);
   border-top: 1px solid var(--card-border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer .social-links {
+  margin-bottom: 1rem; /* Add some space between social links and copyright */
 }
