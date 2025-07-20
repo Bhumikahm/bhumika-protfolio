@@ -1,151 +1,63 @@
-import { motion } from "framer-motion";
-import emailjs from "@emailjs/browser";
-import { useState } from "react";
+import React, { useRef } from 'react';
+import './Contact.css';
+import emailjs from '@emailjs/browser';
 
-const fadeInUp = {
-  initial: { opacity: 0, y: 20 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.6 },
+const Contact = () => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+            .sendForm('service_w16pqzx', 'template_ppl4zm4', form.current, {
+                publicKey: 'cQYTDN5st1hmK4Uli',
+            })
+            .then(
+                () => {
+                    console.log('SUCCESS!');
+                    e.target.reset();
+                    alert('Email Sent !');
+                },
+                (error) => {
+                    console.log('FAILED...', error);
+                    alert('Email Failed to Send !');
+                },
+            );
+    };
+
+    return (
+        <section id='contactPage'>
+            <div id='contact'>
+                <h1 className='contactPageTitle'>Get In Touch</h1>
+                <span className='contactDesc'>
+                    Please fill out the form below to discuss any work
+                    opportunities.
+                </span>
+                <form className='contactForm' ref={form} onSubmit={sendEmail}>
+                    <input
+                        type='text'
+                        className='name'n
+                        placeholder='Your Name'
+                        name='from_name'
+                    />
+                    <input
+                        type='email'
+                        className='email'n
+                        placeholder='Your Email'
+                        name='from_email'
+                    />
+                    <textarea
+                        className='msg'n
+                        name='message'
+                        rows='5'
+                        placeholder='Your Message'></textarea>
+                    <button type='submit' value='Send' className='submitBtn'>
+                        Submit
+                    </button>
+                </form>
+            </div>
+        </section>
+    );
 };
 
-const staggerContainer = {
-  animate: {
-    transition: {
-      staggerChildren: 0.1,
-    },
-  },
-};
-
-export const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const [formStatus, setFormStatus] = useState({
-    submitting: false,
-    success: false,
-    error: false,
-    message: "",
-  });
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    setFormStatus({
-      submitting: true,
-      success: false,
-      error: false,
-      message: "",
-    });
-
-    try {
-      await emailjs.send(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-        {
-          name: formData.name,
-          email: formData.email,
-          message: formData.message,
-        }
-      );
-
-      setFormStatus({
-        submitting: false,
-        success: true,
-        error: false,
-        message: "Message sent successfully!",
-      });
-
-      setFormData({
-        name: "",
-        email: "",
-        message: "",
-      });
-    } catch (error) {
-      setFormStatus({
-        submitting: false,
-        success: false,
-        error: true,
-        message: "Failed to send message. Please try again.",
-      });
-    }
-  };
-
-  return (
-    <motion.section
-      id="contact"
-      className="contact"
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.6 }}
-    >
-      <motion.h2
-        variants={fadeInUp}
-        initial="initial"
-        animate="animate"
-        viewport={{ once: true }}
-      >
-        Get in Touch
-      </motion.h2>
-
-      <motion.div className="contact-content" variants={fadeInUp}>
-        <motion.form className="contact-form" onSubmit={handleSubmit}>
-          <motion.input
-            type="text"
-            name="name"
-            placeholder="Your Name..."
-            required
-            whileFocus={{ scale: 1.02 }}
-            onChange={handleInputChange}
-          />
-          <motion.input
-            type="email"
-            name="email"
-            placeholder="Your Email..."
-            required
-            whileFocus={{ scale: 1.02 }}
-            onChange={handleInputChange}
-          />
-          <motion.textarea
-            name="message"
-            placeholder="Your Message..."
-            required
-            whileFocus={{ scale: 1.02 }}
-            onChange={handleInputChange}
-          />
-
-          <motion.button
-            className="submit-btn"
-            type="submit"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            disabled={formStatus.submitting}
-          >
-            {formStatus.submitting ? "Sending..." : "Send Message"}
-          </motion.button>
-
-          {formStatus.message && (
-            <motion.div
-              className={`form-status ${
-                formStatus.success ? "success" : "error"
-              } `}
-            >
-              {formStatus.message}
-            </motion.div>
-          )}
-        </motion.form>
-      </motion.div>
-    </motion.section>
-  );
-};
+export default Contact;
