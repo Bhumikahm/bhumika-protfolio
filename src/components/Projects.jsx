@@ -69,20 +69,19 @@ export const Projects = () => {
           <motion.div
             className="project-image"
             style={{
-              backgroundImage: "url('/projects/social-media.png')",
+              backgroundImage: "url('/projects/project__2.png')",
             }}
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.2 }}
           />
-          <h3>Social Media Dashboard</h3>
+          <h3>Protfolio</h3>
           <p>
-            A comprehensive social media management dashboard with analytics,
-            scheduling, and engagement tracking features.
+          A modern, responsive portfolio website showcasing my skills and projects. Built using React.js and deployed on Vercel, it reflects my passion for creating innovative and scalable software solutions.
           </p>
           <div className="project-tech">
             <span>React</span>
-            <span>Node.js</span>
-            <span>MongoDB</span>
+            <span>Vite</span>
+            <span>Tailwind CSS</span>
           </div>
         </motion.div>
 
