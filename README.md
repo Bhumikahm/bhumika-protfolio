@@ -1,8 +1,8 @@
 
-# 🌐 Chandan Kumar Chaurasiya - Developer Portfolio
+# 🌐 Bhumika H M - Developer Portfolio
 
 <p align="center">
-  <a href="https://chandan-portfolio-tau.vercel.app/" target="_blank">
+  <a href="https://bhumika-protfolio.vercel.app/" target="_blank">
     <img src="https://img.shields.io/badge/🔗 Live Demo-black?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo" />
   </a>
   <img src="https://img.shields.io/badge/📡 Status-Online-brightgreen?style=for-the-badge" alt="Status" />
