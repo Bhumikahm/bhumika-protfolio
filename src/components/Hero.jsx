@@ -40,16 +40,15 @@ export const Hero = () => {
             variants={fadeInUp}
             whileHover={{ scale: 1.02 }}
           >
-            PedroTech
+            Bhumika HM
           </motion.h1>
           <motion.h2 className="hero-subtitle" variants={fadeInUp}>
             {" "}
-            Creative Developer & Designer
+            FullStack Developer & Designer
           </motion.h2>
           <motion.p className="hero-description" variants={fadeInUp}>
-            I craft beautiful digital experiences that combine stunning design
-            with powerful functionality. Specializing in modern web applications
-            and interactive user interfaces.
+          I’m Bhumika H M, a passionate software developer with hands-on experience in building full-stack web and AI-powered applications. I specialize in Java, JavaScript, React.js, and databases like MySQL and Oracle.
+
           </motion.p>
 
           <motion.div className="cta-buttons" variants={staggerContainer}>
@@ -72,14 +71,11 @@ export const Hero = () => {
             </motion.a>
           </motion.div>
           <motion.div className="social-links" variants={staggerContainer}>
-            <motion.a href="https://github.com" target="_blank">
+            <motion.a href="https://github.com/Bhumikahm" target="_blank">
               <i className="fab fa-github"> </i>
             </motion.a>
-            <motion.a href="https://linkedin.com" target="_blank">
+            <motion.a href="http://www.linkedin.com/in/bhumika-h-m" target="_blank">
               <i className="fab fa-linkedin"> </i>
-            </motion.a>
-            <motion.a href="https://twitter.com" target="_blank">
-              <i className="fab fa-twitter"> </i>
             </motion.a>
           </motion.div>
         </motion.div>
@@ -134,7 +130,7 @@ export const Hero = () => {
               <span className="card-icon"> 💻 </span>
               <span className="card-text">
                 {" "}
-                Currently working on something awesome!
+                Currently working on awesome Project!
               </span>
             </div>
           </motion.div>
