@@ -49,7 +49,7 @@ Built using **React.js** and deployed via **Vercel**, this site reflects my pass
 
 | 💼 Projects Section |
 |---------------------|
-|![Projects](https://github.com/Chandankumar2004/chandan-portfolio/blob/c68b1d22db1685cbc208eb786565edc53ca9ee7d/Screenshot%202025-07-11%20114052.png) |
+|![Projects](https://github.com/Bhumikahm/bhumika-protfolio/blob/1a0d46e7cf222c057b5bc4c48b26d56e88ea462a/protfolio.png) |
 
 ---
 
@@ -59,7 +59,7 @@ Follow these steps to clone and run the project on your local machine:
 
 ```bash
 # 1️⃣ Clone the repository
-git clone https://github.com/Chandankumar2004/portfolio.git
+git clone https://github.com/Bhumikahm/portfolio.git
 
 # 2️⃣ Navigate into the directory
 cd portfolio
@@ -77,12 +77,12 @@ npm start
 
 ## 👨‍💻 Author
 
-**Chandan Kumar Chaurasiya**
+**Bhumika H M**
 
-- 📧 [chandan32005c@gmail.com](mailto:chandan32005c@gmail.com)  
-- 🔗 [LinkedIn](https://www.linkedin.com/in/chandan2004)  
-- 💻 [GitHub](https://github.com/Chandankumar2004)  
-- 🌐 [Portfolio](https://chandan-portfolio-tau.vercel.app/)
+- 📧 [Bhumikahm2003@gmail.com](mailto:bhumikahm2003@gmail.com)  
+- 🔗 [LinkedIn](http://www.linkedin.com/in/bhumika-h-m)  
+- 💻 [GitHub](https://github.com/Bhumikahm)  
+- 🌐 [Portfolio](https://bhumika-protfolio.vercel.app/)
 
 ---
 
