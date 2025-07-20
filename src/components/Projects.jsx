@@ -93,20 +93,20 @@ export const Projects = () => {
           <motion.div
             className="project-image"
             style={{
-              backgroundImage: "url('/projects/stopwatch.png')",
+              backgroundImage: "url('/projects/project__3.jpg')",
             }}
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.2 }}
           />
-          <h3>Productivity Timer</h3>
+          <h3>EMS</h3>
           <p>
-            A sleek productivity timer application with customizable work
-            sessions, statistics tracking, and dark mode support.
+          This Java Swing-based Employee Management System supports adding, viewing, searching, updating, and deleting employee records with MySQL database integration.
           </p>
           <div className="project-tech">
-            <span>React</span>
-            <span>TypeScript</span>
-            <span>TailwindCSS</span>
+            <span>Java</span>
+            <span>Swing</span>
+            <span>SQL</span>
+            <span>JDBC</span>
           </div>
         </motion.div>
       </motion.div>
