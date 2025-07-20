@@ -46,18 +46,18 @@ export const Projects = () => {
         >
           <motion.div
             className="project-image"
-            style={{ backgroundImage: "url('/projects/ai-saas.png')" }}
+            style={{ backgroundImage: "url('/projects/project__1.png')" }}
             whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
           />
-          <h3> AI SaaS Platform</h3>
+          <h3> ChartBot </h3>
           <p>
-            A modern SaaS platform built with Next.js and OpenAI integration,
-            featuring real-time AI-powered content generation and analytics.
+          A responsive, web-based chatbot powered by Google Gemini API. Users can interact through text and images, with a sleek UI, emoji support, and typing animations, deployed on Vercel.
           </p>
           <div className="project-tech">
-            <span>Next.js</span>
-            <span>OpenAI</span>
-            <span>TailwindCSS</span>
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>API</span>
           </div>
         </motion.div>
 
