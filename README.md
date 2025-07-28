@@ -16,7 +16,6 @@
 Welcome to my **Developer Portfolio** — a modern and responsive website showcasing my:
 
 - 🌟 Projects  
-- 🧠 Skills  
 - 📄 Resume  
 - 📬 Contact Info  
 
